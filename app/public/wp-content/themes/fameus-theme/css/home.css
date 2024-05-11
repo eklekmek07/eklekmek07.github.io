@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Neue Plak";
+    src: url("../fonts/Neue-Plak-Extended-Light.ttf");
+}
+
+@font-face {
+
+    font-family: "Neue Plak Regular";
+    src: url("../fonts/Neue-Plak-Extended-Regular.ttf");
+}
+
+img.logo {
+    height: 5dvh;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spaces logo and links */
+    background: black; /* Background color */
+    padding: 1rem; /* Padding around the nav for spacing */
+}
+
+/* Logo styles */
+.logo-link img.logo {
+    height: 50px; /* Logo height, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+.nav-links li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 30px; /* Font size */
+}
+
+.nav-links li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+body, html {
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    font-family: "Neue Plak" !important;
+}
+
+.body-container {
+    margin: 5dvh;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* This will keep items horizontally aligned */
+    justify-content: flex-start; /* Align items to the start of the nav bar */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Removes bullet points from the list */
+    background: #D2FF58; /* Keeping your lime green background */
+    z-index: 999;
+    min-width: 600px; /* Maintains minimum width */
+}
+
+.nav-item {
+    display: flex; /* Ensures flex settings apply to items */
+    align-items: center; /* Centers items vertically within the navbar */
+    font-size: 5vh; /* Adjusted size */
+    margin-right: 0px; /* Adds spacing between navigation items */
+}
+
+.container-fluid {padding-left: 0!important}
+
+.texts {
+    padding-top:5dvh;
+    line-height: 5dvh;
+    font-weight: 300;
+    font-family: "Neue Plak Regular" !important;
+    font-size:30px!important;
+    color:white;
+    letter-spacing: 0.25dvh;
+}
+
+@media (max-width: 500px) {
+    .texts {
+        font-size: 20px!important;
+        letter-spacing: 0.25dvh; 
+        line-height: 3.5dvh;
+
+    }
+}
+
+p.first-text {
+    font-weight: 700;
+}
+
+p.second-text {
+    font-family: "Neue Plak"!important;
+}
+
+.text-lime-green {
+    color: #D2FF58; /* Lime green text for specific elements */
+}
+    main {
+        overflow: hidden; /* Prevents any overflow (scrolling) in the main content area */
+    }
+
+
+
+.footer-text {
+    font-weight: 500;
+    font-family: "Neue Plak Regular";
+    color: #6E51D9;
+    white-space: nowrap;
+    font-size: 17dvh;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100rem);
+    }
+    to {
+        transform: translateX(-100rem);
+    }
+}
+
+a {
+    text-decoration: none !important; /* Underline by default */
+    color: inherit; /* Inherits the white color */
+}
+
+a:hover {
+    text-decoration: none; /* No underline on hover */
+    color: inherit; /* Color stays white on hover */
+}
+
+    .text-emphasis {
+        color: white;           /* Sets text color to white */
+        font-size: 45px;        /* Sets font size to 30 pixels */
+        font-weight: 600;       /* Makes the font bold and wide */
+    }
